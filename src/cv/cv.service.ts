@@ -96,7 +96,7 @@ export class CvService {
     }
 
 
-    async statCvNumberByAge( maxAge ,minAge= 0 ){
+    async statCvNumberByAge( maxAge:number ,minAge: number=0 ){
         // creer un querybuilder
         const qb = this.cvRepo.createQueryBuilder("cv");
         // chercher le nombre de cv par age  
